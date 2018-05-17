@@ -7,7 +7,7 @@
 }
 
 /* This is a class selector that selects only <ul> elements with the class atrribute equal to topnav, to be styled using these CSS properties and their values. */
-ul.topnav{
+nav ul{
 	list-style-type:none; /* Specifies that this list doesn't need bullets as item markers because the list items are being converted to navigation links. */
 	margin: 0; /* removes margin from the list*/
 	padding: 0;/* removes padding from the list*/
@@ -17,13 +17,13 @@ ul.topnav{
 	top: 0;
 }
 
-ul.topnav li {
+nav li {
 	float: left; /* By default list items are displayed in a block, each item on their own line. This removes the line breaks before and after each list item, to display them on one line so that they appear more like items in a horizontal navigation bar. 
 	border-right: 1px solid #bbb; /*creates link dividers between the elements that appear as gray right borders so that we know the limits and the whereabouts of each navigation link. */
 }
  
 /* Specifies the layout of the navigation links that are list items of the ul element with a class attribute with the value topnav as the class's name. */
-ul.topnav li a { 
+nav li a { 
 	display: block; /* Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify padding (and height, width, margins, etc. if you want). */
 	color: white;
 	text-align: center;
@@ -34,7 +34,7 @@ ul.topnav li a {
 
 
   /* Change the link color to #111 (black) on hover. */
-ul.topnav li a:hover {
+nav li a:hover {
 	background-color:#ddd;
 	color: black;
 }
@@ -115,6 +115,21 @@ ul.projects li {
 	margin-bottom: 5px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+a.button {
+	background-color: #D5CBA8;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	transition-duration: .4s;
+}
+
+a.button:hover {
+	background-color: black;
+	color: white;
 }
 
 ul.employment li {
